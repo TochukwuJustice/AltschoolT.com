@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <style>
+    * {
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 0.9rem;
+    }
+    body {
+      background: linear-gradient(-45deg, blue, red, purple);
+      animation: animate 10s ease infinite;
+      background-size: 400% 400%;
+    }
+    .container {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      padding-top: 5%;
+      text-align: center;
+     
+    }
+
+    .container h2 {
+      font-size: 2rem;
+    
+ 
+    }
+    .container .para {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: lightgray;
+      padding-top: 2%;
+    }
+    .container nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 35%;
+      gap: 40px;
+    }
+
+    li {
+      border: 1px solid whitesmoke;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: aliceblue;
+      text-decoration: none;
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 1rem;
+    }
+
+    li:hover {
+      background-color: #fff;
+      transition: 1s;
+    }
+    .container footer {
+      text-align: center;
+      color: #fff;
+      margin-top: 65%;
+    }
+    .container footer p {
+      font-size: 1.2rem;
+    }
+
+
+    @keyframes animate {
+      0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+      background: linear-gradient(-65deg, blue, red, purple);
+      animation: animate 10s ease infinite;
+      background-size: 400% 400%;
+    }
+      .container {
+        padding: 25%;
+        gap:5px ;
+        height: 100svh;
+      }
+
+      .container h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        
+      
+        
+      }
+      .container .para {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+      .container nav ul {
+        display: block;
+        justify-content: center;
+        list-style: none;
+
+       
+        
+      }
+      .container nav ul li {
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        margin-inline: 120px;
+        text-align: center;
+        color: #000000;
+        text-decoration: none;
+        width: auto;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+
+      .container footer {
+       text-align: center;
+        color: #fff;
+       
+
+      }
+      @keyframes animate {
+      0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>My Name is Ezebuike Justice</h2>
+    <p class="para">Below are the links to my assignments</p>
+
+    <nav>
+      <ul>
+        <li><a href="wp-pusher.html">Wp_Pusher</a></li>
+        <li><a href="scissors.html">Scissors</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <p>&copy;Ezebuike Justice 2024</p>
+    </footer>
+  </div>
+</body>
+</html>
